@@ -1,7 +1,11 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
+<a class="top" [routerLink]="['/']">
+  <h1 [class]="'title'" [style.fontSize]="'20px'">My Store</h1>
 </a>
 <a routerLink="/cart" class="button fancy-button">
-  <i class="material-icons">shopping_cart</i>
+  <i class="material-icons" [ngClass]="{ active: 'active' }">shopping_cart</i>
   Checkout
 </a>
+
+<ng-template [ngIf]="false">
+  <div>This is test</div>
+</ng-template>

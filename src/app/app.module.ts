@@ -12,6 +12,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CarComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { MineDemoComponent } from './mine-demo/mine-demo.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductDetailsComponent,
     CarComponent,
     ShippingComponent,
+    MineDemoComponent,
   ], //声明组件
   imports: [
     BrowserModule,

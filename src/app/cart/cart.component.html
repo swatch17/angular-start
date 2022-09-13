@@ -20,3 +20,9 @@
   </div>
   <button class="button" type="submit">Purchase</button>
 </form>
+
+<input type="text" #userName (input)="inputChange($event)" />
+<button (click)="getName(userName.value)">获取UserName</button>
+<!-- 双向绑定 -->
+<!-- <input type="text" [(ngModel)]="title" />
+<p>标题：{{ title }}</p> -->
